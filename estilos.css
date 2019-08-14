@@ -1,0 +1,201 @@
+body{
+	font-family: 'Dancing Script', cursive;
+	background-color: #02010a;
+}
+
+header {
+	padding: 1vh 4vw;
+	background-color:  #5b7989;
+	border-top-left-radius: 1vh;
+	border-top-right-radius:  1vh;
+	text-shadow: 2px 2px 2px white;
+	animation-name: encabezado;
+	animation-duration: 2s;
+}
+
+
+.menu {
+	display: flex;
+  flex-direction:row;
+	width:100%;
+}
+
+.menu > div {
+	width: 50%;
+	color: white;
+	font-size: 1.5em;
+}
+
+#menu-principal ul li{
+	list-style-type: none;
+}
+
+#menu-principal a {
+	text-decoration: none;
+	color: white;
+	word-spacing: 45px;
+	text-align: right:
+}
+
+#contenido {
+  display: flex;
+  flex-direction:column;
+	background: #82c3a6;
+	text-align: center;
+}
+
+
+.contenedor{
+	display: flex;
+  flex-direction:row;
+	border: solid 1px;
+}
+
+#paisajes div{
+	display: flex;
+  flex-direction:row;
+	 background-color: #d5c75f ;
+}
+
+img{
+	box-shadow: 2px 2px 2px #02010a;
+	}
+
+#imagen_secundaria .contenedor > div{
+	width: 50%;
+	background-color: #d5c75f ;
+}
+
+
+
+@keyframes imagen2-animacion {
+	from {
+	transform: rotate(10deg);
+	}
+	to{
+		height: 10;
+	}
+}
+
+#imagen2 img:hover{
+	box-shadow: 2px 2px 2px #82c3a6;
+	animation-name: imagen2-animacion;
+	animation-duration: 10s;
+}
+
+@keyframes imagen3-animacion {
+ 0% {
+    position: relative;
+		bottom: 0px;
+		left: 0px;
+    }
+    50% {
+    position: relative;
+		bottom: 5px;
+		left: 20px;
+    }
+		100% {
+		position: relative;
+		bottom: 0px;
+ 		left: 0px;
+  }
+}
+
+@keyframes encabezado {
+ 0% {
+    margin-top: 150%;
+		}
+    60% {
+    margin-top: -5%;
+    }
+		100% {
+		margin-top: 0%;
+  }
+}
+
+
+
+
+#imagen3 img:hover{
+	box-shadow: 2px 2px 2px #82c3a6;
+	animation-name: imagen3-animacion;
+	animation-duration: 1s;
+}
+
+#imagenp1 {
+  -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+
+#imagenp2 figure, #imagenp4 figure, #imagenp6 figure{
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+
+#imagenp3 img{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+
+#contenido_f {
+  display: flex;
+  flex-direction:column;
+	background: #C6d5c5;
+	}
+
+.contacto {
+	display: flex;
+  flex-direction:row;
+}
+
+.contacto > div{
+	width: 25%;
+	text-align: center;
+
+}
+
+#contenido_f h4{
+	font-size: 10px;
+	font-size: 1.0em;
+}
+
+
+@media (max-width: 600px) {
+	.menu  {
+		display: flex;
+		flex-direction:column;
+      }
+
+	.menu > div{
+				width: 100%;
+			}
+
+	.contenedor{
+		display: flex;
+	  flex-direction:column;
+	}
+
+	#imagen_secundaria .contenedor > div{
+		width: 100%;
+  }
+
+   #menu-principal a{
+		word-spacing: 3px;
+		}
+
+	.contacto {
+		display: flex;
+	  flex-direction:column;
+		}
+
+	.contacto > div{
+		width: 100%;
+		text-align: center;
+		}
+
+		#paisajes div{
+			display: flex;
+		  flex-direction:column;
+		}
+
+}
